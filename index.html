@@ -6,16 +6,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/assets/css/style.css">
-    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
     <title>Plants Website</title>
 </head>
 
-<body>
+<body class="flex-column">
 
+    <header class="flex">
+        <div class="logo">
+            <a href="#">
+                <box-icon name='leaf' color='#3e6553'></box-icon>Plantex
+            </a>
+        </div>
+        <div class="icons">
+            <button>
+                <box-icon name='moon'></box-icon>
+            </button>
+            <button>
+                <box-icon name='menu'></box-icon>
+            </button>
+        </div>
+        <nav class="hidden">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
 
+    <script src="https://unpkg.com/boxicons@2.1.1/dist/boxicons.js"></script>
     <script src="assets/js/script.js"></script>
 </body>
 

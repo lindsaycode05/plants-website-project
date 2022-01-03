@@ -27,12 +27,26 @@ li {
   list-style: none;
 }
 
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
 .flex {
   display: flex;
 }
 
 .grid {
   display: grid;
+}
+
+.hidden {
+  display: none;
+}
+
+button {
+  border: none;
+  background: none;
 }
 
 // .width {
