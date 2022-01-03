@@ -19,6 +19,10 @@ body {
   width: 100%;
 }
 
+img{
+  width: 100%;
+}
+
 a {
   text-decoration: none;
 }
@@ -34,6 +38,7 @@ li {
 
 .flex {
   display: flex;
+  align-items: center;
 }
 
 .grid {
@@ -42,6 +47,11 @@ li {
 
 .hidden {
   display: none;
+}
+
+.width{
+  width: 90%;
+  margin-inline: auto;
 }
 
 button {
