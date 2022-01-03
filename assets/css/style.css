@@ -47,3 +47,28 @@ button {
   border: none;
   background: none;
 }
+
+header {
+  padding: 1.4rem 1.65rem;
+  justify-content: space-between;
+  align-items: center;
+}
+header .logo a {
+  align-items: center;
+  gap: 0.325rem;
+  color: #252826;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.35rem;
+}
+header .logo a box-icon {
+  width: 2rem;
+  height: 2rem;
+}
+header .icons {
+  gap: 1.5rem;
+}
+header .icons box-icon[name=moon] {
+  width: 2rem;
+  height: 2rem;
+}

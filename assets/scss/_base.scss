@@ -1,1 +1,32 @@
 @use "variables" as v;
+
+header {
+  padding: 1.4rem 1.65rem;
+  justify-content: space-between;
+  align-items: center;
+
+  .logo a {
+    align-items: center;
+    gap: 0.325rem;
+    color: v.$title-color;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.35rem;
+
+    box-icon {
+      width: 2rem;
+      height: 2rem;
+    }
+  }
+
+  .icons {
+    gap: 1.5rem;
+
+    box-icon {
+      &[name="moon"] {
+        width: 2rem;
+        height: 2rem;
+      }
+    }
+  }
+}
