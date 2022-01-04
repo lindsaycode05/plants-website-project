@@ -223,7 +223,7 @@ main {
       color: v.$first-color;
       font-size: 1.5rem;
       font-weight: 500;
-      gap: 0.7rem;
+      gap: 0.466rem;
       transition: 0.2s;
       width: 11rem;
 
@@ -232,7 +232,7 @@ main {
       }
 
       &:hover box-icon {
-        transform: translateX(0.5rem) rotate(-40deg);
+        transform: translateX(0.3rem) rotate(-40deg);
       }
 
       box-icon {

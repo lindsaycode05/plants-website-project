@@ -254,7 +254,7 @@ main {
   color: #3e6553;
   font-size: 1.5rem;
   font-weight: 500;
-  gap: 0.7rem;
+  gap: 0.466rem;
   transition: 0.2s;
   width: 11rem;
 }
@@ -262,7 +262,7 @@ main {
   color: #365949;
 }
 .about__content-secondary-button a:hover box-icon {
-  transform: translateX(0.5rem) rotate(-40deg);
+  transform: translateX(0.3rem) rotate(-40deg);
 }
 .about__content-secondary-button a box-icon {
   width: 1.8rem;
@@ -272,7 +272,7 @@ main {
 }
 
 @media only screen and (min-width: 392px) {
-  .about__content-checks span:nth-of-type(2) i, .about__content-checks span:nth-of-type(3) i {
+  .about__content-secondary-checks span:nth-of-type(2) i, .about__content-secondary-checks span:nth-of-type(3) i {
     margin-bottom: 0;
   }
 }
