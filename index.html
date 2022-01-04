@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
     <title>PlanteX</title>
 </head>
 
@@ -77,28 +78,43 @@
         </section>
 
         <section class="about grid">
-            <div class="about__image"><img src="./assets/img/about.png" alt="touching the plant"></div>
-            <div class="about__content">
-                <h2>Who we really are & <br> why choose us</h2>
-                <p>We have over 4000+ unbiased reviews and our customers trust our plant process and delivery service
-                    every time </p>
-                <span>
-                    <box-icon type='solid' name='check-square'></box-icon>We always deliver on time.
-                </span>
-                <span>
-                    <box-icon type='solid' name='check-square'></box-icon>We give you guides to protect and care for
-                    your plants.
-                </span>
-                <span>
-                    <box-icon type='solid' name='check-square'></box-icon>We always come over for a check-up after sale.
-                </span>
-                <span>
-                    <box-icon type='solid' name='check-square'></box-icon> 100% money back guaranteed.
-                </span>
-                <a href="#">
-                    Shop Now
-                    <box-icon name='down-arrow-alt' color='#3e6652'></box-icon>
-                </a>
+            <div class="about__image">
+                <img src="./assets/img/about.png" alt="woman touching the plant">
+            </div>
+            <div class="about__content flex-column">
+                <div class="about__content-main flex-column">
+                    <h2>Who we really are & <br> why choose us</h2>
+                    <p>We have over 4000+ unbiased reviews and our customers trust our plant process and delivery
+                        service
+                        every time </p>
+                </div>
+                <div class="about__content-secondary flex-column">
+                    <div class="about__content-secondary-checks flex-column">
+                        <span class="flex">
+                            <i class='bx bxs-check-square' style='color:#3e6652'></i>We always
+                            deliver on time.</span>
+                        <span class="flex">
+                            <i class='bx bxs-check-square' style='color:#3e6652'></i>We give you guides to
+                            protect and care for
+                            your plants.
+                        </span>
+                        <span class="flex">
+                            <i class='bx bxs-check-square' style='color:#3e6652'></i>We always come over for a
+                            check-up after
+                            sale.
+                        </span>
+                        <span class="flex">
+                            <i class='bx bxs-check-square' style='color:#3e6652'></i>100% money back
+                            guaranteed.
+                        </span>
+                    </div>
+                    <div class="about__content-secondary-button">
+                        <a href="#" class="flex">
+                            Shop Now
+                            <box-icon name='down-arrow-alt' color='#3e6652'></box-icon>
+                        </a>
+                    </div>
+                </div>
             </div>
         </section>
     </main>

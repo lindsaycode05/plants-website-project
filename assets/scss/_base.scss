@@ -64,8 +64,8 @@ header {
   }
 }
 
-main{
-    gap: 11.5rem;
+main {
+  gap: 11.5rem;
 }
 
 .hero {
@@ -170,4 +170,77 @@ main{
   }
 }
 
+.about {
+  gap: 3rem;
 
+  &__content {
+    gap: 3rem;
+  }
+}
+
+.about__image {
+  text-align: center;
+  img {
+    width: 28.8rem;
+  }
+}
+
+.about__content-main {
+  gap: 2rem;
+  h2 {
+    font-size: 2rem;
+    color: v.$title-color;
+  }
+
+  p {
+    font-size: 1.5rem;
+    color: v.$text-color;
+  }
+}
+
+.about__content-secondary {
+  gap: 3.85em;
+  &-checks {
+    gap: 1.8rem;
+    span {
+      gap: 0.8rem;
+      color: v.$text-color;
+      font-size: 1.4rem;
+
+      i {
+        font-size: 1.6rem;
+      }
+
+      &:nth-of-type(2) i,
+      &:nth-of-type(3) i {
+        margin-bottom: 1.9rem;
+      }
+    }
+  }
+
+  &-button {
+    a {
+      color: v.$first-color;
+      font-size: 1.5rem;
+      font-weight: 500;
+      gap: 0.7rem;
+      transition: 0.2s;
+      width: 11rem;
+
+      &:hover {
+        color: v.$first-color-alt;
+      }
+
+      &:hover box-icon {
+        transform: translateX(0.5rem) rotate(-40deg);
+      }
+
+      box-icon {
+        width: 1.8rem;
+        height: 1.7rem;
+        transform: rotate(-40deg);
+        transition: 0.2s;
+      }
+    }
+  }
+}

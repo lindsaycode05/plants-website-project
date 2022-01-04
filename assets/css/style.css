@@ -1,16 +1,16 @@
 *,
-*::before,
-*::after {
+*::after,
+*::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
 }
 
 html {
   font-size: 62.5%;
   overflow-x: hidden;
   scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
@@ -51,7 +51,7 @@ li {
 }
 
 .width {
-  width: 92.5%;
+  width: 90%;
   margin-inline: auto;
 }
 
@@ -207,6 +207,75 @@ main {
   transform: rotate(-90deg);
 }
 
+.about {
+  gap: 3rem;
+}
+.about__content {
+  gap: 3rem;
+}
+
+.about__image {
+  text-align: center;
+}
+.about__image img {
+  width: 28.8rem;
+}
+
+.about__content-main {
+  gap: 2rem;
+}
+.about__content-main h2 {
+  font-size: 2rem;
+  color: #252826;
+}
+.about__content-main p {
+  font-size: 1.5rem;
+  color: #565d59;
+}
+
+.about__content-secondary {
+  gap: 3.85em;
+}
+.about__content-secondary-checks {
+  gap: 1.8rem;
+}
+.about__content-secondary-checks span {
+  gap: 0.8rem;
+  color: #565d59;
+  font-size: 1.4rem;
+}
+.about__content-secondary-checks span i {
+  font-size: 1.6rem;
+}
+.about__content-secondary-checks span:nth-of-type(2) i, .about__content-secondary-checks span:nth-of-type(3) i {
+  margin-bottom: 1.9rem;
+}
+.about__content-secondary-button a {
+  color: #3e6553;
+  font-size: 1.5rem;
+  font-weight: 500;
+  gap: 0.7rem;
+  transition: 0.2s;
+  width: 11rem;
+}
+.about__content-secondary-button a:hover {
+  color: #365949;
+}
+.about__content-secondary-button a:hover box-icon {
+  transform: translateX(0.5rem) rotate(-40deg);
+}
+.about__content-secondary-button a box-icon {
+  width: 1.8rem;
+  height: 1.7rem;
+  transform: rotate(-40deg);
+  transition: 0.2s;
+}
+
+@media only screen and (min-width: 392px) {
+  .about__content-checks span:nth-of-type(2) i, .about__content-checks span:nth-of-type(3) i {
+    margin-bottom: 0;
+  }
+}
 @media only screen and (min-width: 767px) {
   body {
     gap: 9rem;

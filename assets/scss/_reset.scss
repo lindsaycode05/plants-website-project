@@ -1,17 +1,16 @@
 *,
-*::before,
-*::after {
+*::after,
+*::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-  // 400,500,600
 }
 
 html {
   font-size: 62.5%;
   overflow-x: hidden;
   scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
@@ -52,7 +51,7 @@ li {
 }
 
 .width {
-  width: 92.5%;
+  width: 90%;
   margin-inline: auto;
 }
 
