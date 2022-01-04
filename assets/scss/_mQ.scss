@@ -48,6 +48,10 @@
       right: -8rem;
     }
   }
+
+  .about {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media only screen and (min-width: 970px) {
@@ -67,5 +71,19 @@
     &__content h1 {
       font-size: 5.3rem;
     }
+  }
+
+  .about__image img {
+    width: 36rem;
+  }
+
+  .about h2 {
+    font-size: 3.8rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .about {
+    gap: 7rem;
   }
 }
