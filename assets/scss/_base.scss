@@ -1,5 +1,9 @@
 @use "variables" as v;
 
+body {
+  gap: 6rem;
+}
+
 header {
   padding: 1.4rem 1.65rem;
   justify-content: space-between;
@@ -7,7 +11,7 @@ header {
 
   .logo a {
     align-items: center;
-    gap: 0.325rem;
+    gap: 0.425rem;
     color: v.$title-color;
     text-transform: uppercase;
     font-weight: 600;
@@ -24,10 +28,96 @@ header {
 
     box-icon {
       &[name="moon"] {
-        width: 2rem;
-        height: 2rem;
+        width: 1.85rem;
+        height: 1.85rem;
       }
     }
   }
 }
 
+.hero {
+  position: relative;
+  gap: 2.4rem;
+}
+
+.hero__image {
+  text-align: center;
+
+  img {
+    width: 18rem;
+  }
+}
+
+.hero__content {
+  gap: 4rem;
+
+  &-text {
+    gap: 1.8rem;
+  }
+
+  h1 {
+    font-size: 2.4rem;
+    color: v.$title-color;
+  }
+
+  p {
+    font-size: 1.5rem;
+    color: v.$text-color;
+  }
+
+  a {
+    color: v.$body-color;
+    background-color: v.$first-color;
+    font-size: 1.5rem;
+    font-weight: 500;
+    gap: 0.4rem;
+    align-items: end;
+    width: 13rem;
+    padding: 1.55rem 2.7rem;
+    justify-content: center;
+    border-radius: 0.75rem;
+
+    box-icon {
+      width: 1.8rem;
+      height: 1.8rem;
+      transform: rotate(-40deg);
+    }
+  }
+}
+
+.hero__socials {
+  position: absolute;
+  gap: 3.85rem;
+  transform: rotate(90deg);
+  top: 7.8rem;
+  right: -7.4rem;
+
+  p {
+    font-size: 1.3rem;
+    color: v.$first-color;
+    position: relative;
+    font-weight: 500;
+
+    &::after {
+      content: "";
+      width: 1.8rem;
+      height: 0.155rem;
+      position: absolute;
+      top: 50%;
+      left: 7rem;
+      background-color: v.$first-color;
+    }
+  }
+
+  &-icons {
+    gap: 1rem;
+    a {
+      font-size: 2.85rem;
+    }
+    box-icon {
+      width: 1.8rem;
+      height: 1.8rem;
+      transform: rotate(-90deg);
+    }
+  }
+}
