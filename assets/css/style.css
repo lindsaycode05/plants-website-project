@@ -74,6 +74,10 @@ header .logo a {
   text-transform: uppercase;
   font-weight: 600;
   font-size: 1.35rem;
+  transition: 0.2s;
+}
+header .logo a:hover {
+  color: #3e6553;
 }
 header .logo a box-icon {
   width: 2rem;
@@ -118,17 +122,25 @@ header .icons box-icon[name=moon] {
   background-color: #3e6553;
   font-size: 1.5rem;
   font-weight: 500;
-  gap: 0.4rem;
+  gap: 0.5rem;
   align-items: end;
-  width: 13rem;
+  width: 14rem;
   padding: 1.55rem 2.7rem;
   justify-content: center;
   border-radius: 0.75rem;
+  transition: 0.1s;
+}
+.hero__content a:hover {
+  background-color: #365949;
+}
+.hero__content a:hover box-icon {
+  transform: translateX(0.5rem) rotate(-40deg);
 }
 .hero__content a box-icon {
   width: 1.8rem;
   height: 1.8rem;
   transform: rotate(-40deg);
+  transition: 0.35s ease-in-out;
 }
 
 .hero__socials {
@@ -158,6 +170,10 @@ header .icons box-icon[name=moon] {
 }
 .hero__socials-icons a {
   font-size: 2.85rem;
+  transition: 0.35s ease-in-out;
+}
+.hero__socials-icons a:hover {
+  transform: translateY(-0.5rem);
 }
 .hero__socials-icons box-icon {
   width: 1.8rem;
