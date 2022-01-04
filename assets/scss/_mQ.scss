@@ -1,0 +1,62 @@
+@media only screen and (min-width: 767px) {
+  body {
+    gap: 9rem;
+  }
+
+  header {
+    padding: 2.8rem 2.55rem;
+
+    .hidden--primary {
+      display: block;
+    }
+
+    .hidden--secondary {
+      display: none;
+    }
+  }
+
+  .hero {
+    grid-template-columns: repeat(2, 1fr);
+    &__image {
+      order: 2;
+      img {
+        width: 28rem;
+      }
+    }
+
+    &__content {
+      h1 {
+        font-size: 3.225rem;
+      }
+
+      p {
+        font-size: 1.6rem;
+      }
+    }
+
+    &__socials {
+      top: 13.25rem;
+      right: -8rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 970px) {
+  body {
+    gap: 12rem;
+  }
+  
+  header ul a{
+      font-size: 1.615rem;
+  }
+
+  .hero {
+    &__image img {
+      width: 34rem;
+    }
+
+    &__content h1 {
+      font-size: 5.3rem;
+    }
+  }
+}

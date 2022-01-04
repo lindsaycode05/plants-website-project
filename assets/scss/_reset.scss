@@ -17,9 +17,11 @@ html {
 body {
   min-height: 100vh;
   width: 100%;
+  max-width: 110rem;
+  margin-inline: auto;
 }
 
-img{
+img {
   width: 100%;
 }
 
@@ -45,16 +47,17 @@ li {
   display: grid;
 }
 
-.hidden {
+.hidden--primary {
   display: none;
 }
 
-.width{
-  width: 90%;
+.width {
+  width: 92.5%;
   margin-inline: auto;
 }
 
 button {
   border: none;
   background: none;
+  cursor: pointer;
 }

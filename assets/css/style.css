@@ -16,6 +16,8 @@ html {
 body {
   min-height: 100vh;
   width: 100%;
+  max-width: 110rem;
+  margin-inline: auto;
 }
 
 img {
@@ -44,18 +46,19 @@ li {
   display: grid;
 }
 
-.hidden {
+.hidden--primary {
   display: none;
 }
 
 .width {
-  width: 90%;
+  width: 92.5%;
   margin-inline: auto;
 }
 
 button {
   border: none;
   background: none;
+  cursor: pointer;
 }
 
 body {
@@ -74,7 +77,7 @@ header .logo a {
   text-transform: uppercase;
   font-weight: 600;
   font-size: 1.35rem;
-  transition: 0.2s;
+  transition: 0.35s;
 }
 header .logo a:hover {
   color: #3e6553;
@@ -90,6 +93,25 @@ header .icons box-icon[name=moon] {
   width: 1.85rem;
   height: 1.85rem;
 }
+header ul {
+  gap: 4.65rem;
+}
+header ul a {
+  color: #252826;
+  font-size: 1.5rem;
+  font-weight: 500;
+  transition: 0.2s;
+}
+header ul a:hover {
+  color: #3e6553;
+}
+header ul button {
+  margin-top: 0.3rem;
+}
+header ul box-icon {
+  width: 1.95rem;
+  height: 1.95rem;
+}
 
 .hero {
   position: relative;
@@ -100,7 +122,7 @@ header .icons box-icon[name=moon] {
   text-align: center;
 }
 .hero__image img {
-  width: 18rem;
+  width: 20rem;
 }
 
 .hero__content {
@@ -110,7 +132,7 @@ header .icons box-icon[name=moon] {
   gap: 1.8rem;
 }
 .hero__content h1 {
-  font-size: 2.4rem;
+  font-size: 3rem;
   color: #252826;
 }
 .hero__content p {
@@ -170,7 +192,7 @@ header .icons box-icon[name=moon] {
 }
 .hero__socials-icons a {
   font-size: 2.85rem;
-  transition: 0.35s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 .hero__socials-icons a:hover {
   transform: translateY(-0.5rem);
@@ -179,4 +201,56 @@ header .icons box-icon[name=moon] {
   width: 1.8rem;
   height: 1.8rem;
   transform: rotate(-90deg);
+}
+
+@media only screen and (min-width: 767px) {
+  body {
+    gap: 9rem;
+  }
+
+  header {
+    padding: 2.8rem 2.55rem;
+  }
+  header .hidden--primary {
+    display: block;
+  }
+  header .hidden--secondary {
+    display: none;
+  }
+
+  .hero {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .hero__image {
+    order: 2;
+  }
+  .hero__image img {
+    width: 28rem;
+  }
+  .hero__content h1 {
+    font-size: 3.225rem;
+  }
+  .hero__content p {
+    font-size: 1.6rem;
+  }
+  .hero__socials {
+    top: 13.25rem;
+    right: -8rem;
+  }
+}
+@media only screen and (min-width: 970px) {
+  body {
+    gap: 12rem;
+  }
+
+  header ul a {
+    font-size: 1.615rem;
+  }
+
+  .hero__image img {
+    width: 34rem;
+  }
+  .hero__content h1 {
+    font-size: 5.3rem;
+  }
 }

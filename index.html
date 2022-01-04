@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
-    <title>Plants Website</title>
+    <title>PLANTEX</title>
 </head>
 
 <body class="flex-column">
@@ -21,7 +21,7 @@
                 <box-icon name='leaf' color='#3e6553'></box-icon>Plantex
             </a>
         </div>
-        <div class="icons flex">
+        <div class="icons flex hidden--secondary">
             <button>
                 <box-icon name='moon'></box-icon>
             </button>
@@ -29,19 +29,22 @@
                 <box-icon name='menu'></box-icon>
             </button>
         </div>
-        <nav class="hidden">
-            <ul>
+        <nav class="hidden--primary">
+            <ul class="flex">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Products</a></li>
                 <li><a href="#">FAQs</a></li>
                 <li><a href="#">Contact Us</a></li>
+                <button>
+                    <box-icon name='moon'></box-icon>
+                </button>
             </ul>
         </nav>
     </header>
 
     <main class="flex-column width">
-        <section class="hero flex-column">
+        <section class="hero grid">
             <div class="hero__image">
                 <figure>
                     <img src="./assets/img/home.png" alt="plant">
