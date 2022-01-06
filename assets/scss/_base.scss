@@ -245,3 +245,49 @@ main {
   }
 }
 
+.the-steps {
+  background-color: v.$first-color;
+  padding: 2.9rem 1.6rem;
+  border-radius: 1.8rem;
+  gap: 5.35rem;
+
+  h2 {
+    color: v.$body-color;
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  &__cards {
+    gap: 3rem;
+    &-card {
+      background-color: v.$body-color;
+      padding: 2.4rem;
+      border-radius: 1.8rem;
+      gap: 2rem;
+
+      span {
+        color: v.$body-color;
+        background-color: v.$first-color-alt;
+        font-size: 2rem;
+        text-align: center;
+        padding-top: 0.7rem;
+        height: 4.5rem;
+        width: 4.2rem;
+        border-radius: 0.4rem;
+      }
+
+      &-content {
+        gap: 1rem;
+        h3 {
+          font-size: 1.6rem;
+          color: v.$title-color;
+        }
+
+        p {
+          font-size: 1.3rem;
+          color: v.$text-color;
+        }
+      }
+    }
+  }
+}

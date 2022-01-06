@@ -33,29 +33,6 @@ li {
   list-style: none;
 }
 
-.flex-column {
-  display: flex;
-  flex-direction: column;
-}
-
-.flex {
-  display: flex;
-  align-items: center;
-}
-
-.grid {
-  display: grid;
-}
-
-.hidden--primary {
-  display: none;
-}
-
-.width {
-  width: 90%;
-  margin-inline: auto;
-}
-
 button {
   border: none;
   background: none;

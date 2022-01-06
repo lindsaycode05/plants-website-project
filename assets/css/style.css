@@ -33,6 +33,12 @@ li {
   list-style: none;
 }
 
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
 .flex-column {
   display: flex;
   flex-direction: column;
@@ -54,12 +60,6 @@ li {
 .width {
   width: 90%;
   margin-inline: auto;
-}
-
-button {
-  border: none;
-  background: none;
-  cursor: pointer;
 }
 
 body {
@@ -270,6 +270,48 @@ main {
   height: 1.7rem;
   transform: rotate(-40deg);
   transition: 0.2s;
+}
+
+.the-steps {
+  background-color: #3e6553;
+  padding: 2.9rem 1.6rem;
+  border-radius: 1.8rem;
+  gap: 5.35rem;
+}
+.the-steps h2 {
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+}
+.the-steps__cards {
+  gap: 3rem;
+}
+.the-steps__cards-card {
+  background-color: white;
+  padding: 2.4rem;
+  border-radius: 1.8rem;
+  gap: 2rem;
+}
+.the-steps__cards-card span {
+  color: white;
+  background-color: #365949;
+  font-size: 2rem;
+  text-align: center;
+  padding-top: 0.7rem;
+  height: 4.5rem;
+  width: 4.2rem;
+  border-radius: 0.4rem;
+}
+.the-steps__cards-card-content {
+  gap: 1rem;
+}
+.the-steps__cards-card-content h3 {
+  font-size: 1.6rem;
+  color: #252826;
+}
+.the-steps__cards-card-content p {
+  font-size: 1.3rem;
+  color: #565d59;
 }
 
 @media only screen and (min-width: 392px) {
