@@ -298,4 +298,76 @@ main {
   }
 }
 
+.products {
+  gap: 4.5rem;
+}
 
+.products__description {
+  text-align: center;
+  gap: 3rem;
+
+  h2 {
+    font-size: 2.3rem;
+    color: v.$title-color;
+  }
+
+  p {
+    font-size: 1.4rem;
+    color: v.$text-color;
+    padding-inline: 0.65rem;
+  }
+}
+
+.products__list {
+  justify-content: center;
+  gap: 3.65rem;
+}
+
+.products__list-product {
+  gap: 1.3rem;
+
+  &:hover img {
+    transform: translateY(-0.6rem);
+  }
+
+  img {
+    width: 9.35rem;
+    position: relative;
+    transition: 0.28s ease-in-out;
+  }
+
+  &-image {
+    justify-content: center;
+  }
+
+  .img-bg {
+    position: absolute;
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    background-color: v.$first-color-lighter;
+    transform: translateX(-2.565rem);
+  }
+
+  &-description {
+    justify-content: space-between;
+    gap: 3rem;
+  }
+
+  span {
+    font-weight: 600;
+    font-size: 1.25rem;
+  }
+
+  i {
+    background-color: v.$first-color;
+    font-size: 1.6rem;
+    padding: 0.5rem 0.4rem;
+    border-radius: 0.6rem;
+    transition: 0.2s;
+
+    &:hover {
+      background-color: v.$first-color-alt;
+    }
+  }
+}
