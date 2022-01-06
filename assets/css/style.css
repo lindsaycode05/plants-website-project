@@ -292,6 +292,9 @@ main {
   border-radius: 1.8rem;
   gap: 2rem;
 }
+.the-steps__cards-card:hover span {
+  transform: translateY(-0.5rem);
+}
 .the-steps__cards-card span {
   color: white;
   background-color: #365949;
@@ -301,6 +304,7 @@ main {
   height: 4.5rem;
   width: 4.2rem;
   border-radius: 0.4rem;
+  transition: 0.3s ease-in-out;
 }
 .the-steps__cards-card-content {
   gap: 1rem;
@@ -317,6 +321,11 @@ main {
 @media only screen and (min-width: 392px) {
   .about__content-secondary-checks span:nth-of-type(2) i, .about__content-secondary-checks span:nth-of-type(3) i {
     margin-bottom: 0;
+  }
+}
+@media only screen and (min-width: 584px) {
+  .the-steps__cards {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 @media only screen and (min-width: 767px) {
@@ -380,6 +389,28 @@ main {
 
   .about h2 {
     font-size: 3.8rem;
+  }
+
+  .the-steps h2 {
+    font-size: 3.5rem;
+  }
+
+  .the-steps__cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .the-steps__cards-card {
+    padding: 3rem;
+  }
+  .the-steps__cards-card span {
+    font-size: 2.4rem;
+    width: 4.8rem;
+    height: 4.7rem;
+  }
+  .the-steps__cards-card-content h3 {
+    font-size: 1.8rem;
+  }
+  .the-steps__cards-card-content p {
+    font-size: 1.35rem;
   }
 }
 @media only screen and (min-width: 1200px) {

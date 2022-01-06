@@ -7,6 +7,12 @@
   }
 }
 
+@media only screen and (min-width: 584px) {
+  .the-steps__cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media only screen and (min-width: 767px) {
   body {
     gap: 9rem;
@@ -79,6 +85,33 @@
 
   .about h2 {
     font-size: 3.8rem;
+  }
+
+  .the-steps h2 {
+    font-size: 3.5rem;
+  }
+
+  .the-steps__cards {
+    grid-template-columns: repeat(3, 1fr);
+
+    &-card {
+      padding: 3rem;
+      span {
+        font-size: 2.4rem;
+        width: 4.8rem;
+        height: 4.7rem;
+      }
+
+      &-content {
+        h3 {
+          font-size: 1.8rem;
+        }
+
+        p {
+          font-size: 1.35rem;
+        }
+      }
+    }
   }
 }
 

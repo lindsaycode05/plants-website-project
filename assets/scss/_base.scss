@@ -259,11 +259,16 @@ main {
 
   &__cards {
     gap: 3rem;
+
     &-card {
       background-color: v.$body-color;
       padding: 2.4rem;
       border-radius: 1.8rem;
       gap: 2rem;
+
+      &:hover span {
+        transform: translateY(-0.5rem);
+      }
 
       span {
         color: v.$body-color;
@@ -274,6 +279,7 @@ main {
         height: 4.5rem;
         width: 4.2rem;
         border-radius: 0.4rem;
+        transition: 0.3s ease-in-out;
       }
 
       &-content {
