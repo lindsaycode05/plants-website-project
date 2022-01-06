@@ -5,11 +5,36 @@
       margin-bottom: 0;
     }
   }
+
+  .products__list {
+    grid-template-columns: repeat(2, 1fr);
+
+    &-product img {
+      width: 11rem;
+    }
+  }
 }
 
 @media only screen and (min-width: 584px) {
   .the-steps__cards {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .products__list {
+    max-width: 58.4rem;
+    margin-inline: auto;
+    gap: 6rem;
+
+    &-product {
+      img {
+        width: 12rem;
+      }
+
+      .img-bg {
+        width: 11rem;
+        height: 11rem;
+      }
+    }
   }
 }
 
@@ -57,6 +82,10 @@
 
   .about {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .products__list {
+    gap: 10rem;
   }
 }
 
@@ -111,6 +140,37 @@
           font-size: 1.35rem;
         }
       }
+    }
+  }
+
+  .products__list {
+    grid-template-columns: repeat(3, 1fr);
+
+    &-product img {
+      width: 15.45rem;
+    }
+
+    &-product-description {
+      width: 20rem;
+    }
+
+    span {
+      font-size: 1.65rem;
+    }
+
+    i{
+        font-size: 1.8rem;
+    }
+  }
+
+  .products__description {
+    h2 {
+      font-size: 3.65rem;
+    }
+
+    p {
+      font-size: 1.6rem;
+      padding-inline: 21rem;
     }
   }
 }
