@@ -525,6 +525,10 @@ main {
   .products__list {
     gap: 10rem;
   }
+
+  .faq__questions {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 @media only screen and (min-width: 970px) {
   body {
@@ -594,6 +598,19 @@ main {
   .products__description p {
     font-size: 1.6rem;
     padding-inline: 21rem;
+  }
+
+  .faq h2 {
+    font-size: 2.5rem;
+  }
+  .faq h3 {
+    font-size: 1.45rem;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .faq h2 {
+    font-size: 3.7rem;
+    text-align: left;
   }
 }
 @media only screen and (min-width: 1200px) {
