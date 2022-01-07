@@ -333,32 +333,38 @@
             </div>
         </section>
 
-        <section class="contact-us grid">
+        <section class="contact-us grid width">
 
             <div class="contact-us__content flex-column">
                 <div class="contact-us__content-heading">
-                    <h2>Reach out to us today
-                        via any of the given
+                    <h2>Reach out to us today <br>
+                        via any of the given <br>
                         information</h2>
                 </div>
                 <div class="contact-us__content-call flex-column">
                     <p>Call us for instant support</p>
-                    <div class="contact-us__content-call-number flex"><i class='bx bx-phone'></i> +999 888 777</div>
+                    <div class="contact-us__content-call-number">
+                        <p class="data flex"><i class='bx bx-phone'></i> +999 888 777</p>
+                    </div>
                 </div>
                 <div class="contact-us__content-email flex-column">
                     <p>Write us by email</p>
-                    <div class="contact-us__content-email-address flex">
-                        <i class='bx bx-message-square-dots'></i> user@gmail.com
+                    <div class="contact-us__content-email-address">
+                        <p class="data flex"><i class='bx bx-message-square-dots'></i> user@gmail.com</p>
                     </div>
                 </div>
             </div>
             <div class="contact-us__form">
                 <form action="">
-                    <fieldset>
-                        <input type="email" name="email" id="email" placeholder="Email">
-                        <input type="text" name="subject" id="subject" placeholder="Subject">
-                        <textarea name="message" id="message" cols="21" rows="5" placeholder="Message"></textarea>
-                        <button>Send Message <i class='bx bx-right-arrow-alt' style='color:#000'></i></button>
+                    <fieldset class="flex-column">
+                        <input type="email" name="email" id="email" placeholder="Email" required>
+
+                        <input type="text" name="subject" id="subject" placeholder="Subject" required>
+
+                        <textarea name="message" id="message" cols="21" rows="5" placeholder="Message"
+                            required></textarea>
+
+                        <button class="flex">Send Message <i class='bx bx-right-arrow-alt' style='color:#fff'></i></button>
                     </fieldset>
                 </form>
             </div>

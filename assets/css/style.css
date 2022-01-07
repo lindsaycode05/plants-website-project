@@ -34,8 +34,8 @@ li {
 }
 
 button {
-  border: none;
   background: none;
+  border: none;
   cursor: pointer;
 }
 
@@ -453,6 +453,89 @@ main {
     opacity: 1;
   }
 }
+.contact-us {
+  gap: 8rem;
+}
+
+.contact-us__content {
+  gap: 2.5rem;
+}
+.contact-us__content h2 {
+  font-size: 2rem;
+  color: #252826;
+}
+.contact-us__content p {
+  font-size: 1.45rem;
+  color: #565d59;
+  font-weight: 500;
+}
+.contact-us__content p.data {
+  color: #252826;
+  gap: 1rem;
+}
+.contact-us__content p.data i {
+  font-size: 2rem;
+}
+
+.contact-us__content-call, .contact-us__content-email {
+  gap: 0.5rem;
+}
+
+fieldset {
+  gap: 2rem;
+  border: none;
+}
+fieldset button {
+  background-color: #3e6553;
+  color: white;
+  width: 18.35rem;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.45rem;
+  padding: 1.45rem 1.8rem;
+  gap: 0.6rem;
+  border-radius: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s;
+}
+fieldset button:hover {
+  background-color: #365949;
+}
+fieldset button:hover i {
+  transform: translateX(0.3rem) rotate(-35deg);
+}
+fieldset button i {
+  transform: rotate(-35deg);
+  font-size: 1.4rem;
+  transition: 0.2s;
+}
+
+input {
+  border: none;
+  border-bottom: 1px solid #88918d;
+  padding: 1.5rem 0;
+  outline: none;
+  color: #565d59;
+  font-size: 1.7rem;
+  font-family: "Poppins", sans-serif;
+}
+
+textarea {
+  border: none;
+  resize: none;
+  padding: 1rem 0;
+  outline: none;
+  border-bottom: 1px solid #88918d;
+  color: #565d59;
+  font-family: "Poppins", sans-serif;
+}
+
+::placeholder {
+  font-size: 1.4rem;
+  font-family: "Poppins", sans-serif;
+}
+
 @media only screen and (min-width: 392px) {
   .about__content-secondary-checks span:nth-of-type(2) i, .about__content-secondary-checks span:nth-of-type(3) i {
     margin-bottom: 0;

@@ -446,3 +446,97 @@ main {
     opacity: 1;
   }
 }
+
+.contact-us {
+  gap: 8rem;
+}
+
+.contact-us__content {
+  gap: 2.5rem;
+
+  h2 {
+    font-size: 2rem;
+    color: v.$title-color;
+  }
+
+  p {
+    font-size: 1.45rem;
+    color: v.$text-color;
+    font-weight: 500;
+  }
+
+  p.data {
+    color: v.$title-color;
+    gap: 1rem;
+
+    i {
+      font-size: 2rem;
+    }
+  }
+}
+
+.contact-us__content {
+  &-call,
+  &-email {
+    gap: 0.5rem;
+  }
+}
+
+fieldset {
+  gap: 2rem;
+  border: none;
+
+  button {
+    background-color: v.$first-color;
+    color: v.$body-color;
+    width: 18.35rem;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.45rem;
+    padding: 1.45rem 1.8rem;
+    gap: 0.6rem;
+    border-radius: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s;
+
+    &:hover {
+      background-color: v.$first-color-alt;
+    }
+
+    &:hover i {
+      transform: translateX(0.3rem) rotate(-35deg);
+    }
+
+    i {
+      transform: rotate(-35deg);
+      font-size: 1.4rem;
+      transition: 0.2s;
+    }
+  }
+}
+
+input {
+  border: none;
+  border-bottom: 1px solid v.$text-color-light;
+  padding: 1.5rem 0;
+  outline: none;
+  color: v.$text-color;
+  font-size: 1.7rem;
+  font-family: "Poppins", sans-serif;
+}
+
+textarea {
+  border: none;
+  resize: none;
+  padding: 1rem 0;
+  outline: none;
+  border-bottom: 1px solid v.$text-color-light;
+  color: v.$text-color;
+  font-family: "Poppins", sans-serif;
+}
+
+::placeholder {
+  font-size: 1.4rem;
+  font-family: "Poppins", sans-serif;
+}
