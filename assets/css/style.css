@@ -62,6 +62,10 @@ button {
   margin-inline: auto;
 }
 
+.hover :hover {
+  box-shadow: 2px 2px 6px -2px rgba(197, 197, 197, 0.728);
+}
+
 body {
   gap: 6rem;
 }
@@ -382,6 +386,73 @@ main {
   background-color: #365949;
 }
 
+.faq {
+  background-color: #e6efeb;
+  padding: 9rem 2rem 4rem 2rem;
+  gap: 5rem;
+}
+.faq h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #252826;
+}
+.faq__questions {
+  gap: 2.5rem;
+}
+
+.faq__questions-question {
+  background-color: white;
+  gap: 0.15rem;
+  transition: 0.4s;
+}
+.faq__questions-question-uncollapsed {
+  gap: 1rem;
+  cursor: pointer;
+  padding: 1.2rem 0.5rem;
+  justify-content: start;
+}
+.faq__questions-question-uncollapsed i {
+  font-size: 1.85rem;
+  transition: 0.5s;
+}
+.faq__questions-question-uncollapsed h3 {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+.faq__questions-question-collapsed {
+  transition: 0.4s;
+  max-height: 0;
+  overflow: hidden;
+}
+.faq__questions-question-collapsed p {
+  font-size: 1.225rem;
+  padding-inline: 3.3rem;
+  padding-bottom: 1.75rem;
+  line-height: 1.7;
+}
+
+.faq__questions-question.active .faq__questions-question-collapsed {
+  max-height: 30rem;
+  animation: fade 0.5s ease;
+}
+
+.faq__questions-question.active .faq__questions-question-uncollapsed i {
+  transform: rotate(45deg);
+}
+
+.faq__questions-question.active {
+  background-color: #3e6553;
+  color: white;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 @media only screen and (min-width: 392px) {
   .about__content-secondary-checks span:nth-of-type(2) i, .about__content-secondary-checks span:nth-of-type(3) i {
     margin-bottom: 0;
