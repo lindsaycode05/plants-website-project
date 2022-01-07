@@ -540,3 +540,129 @@ textarea {
   font-size: 1.4rem;
   font-family: "Poppins", sans-serif;
 }
+
+footer {
+  gap: 5rem;
+}
+
+.subscribe {
+  gap: 3.5rem;
+  a {
+    color: v.$title-color;
+    font-size: 1.45rem;
+    font-weight: 600;
+    gap: 0.4rem;
+    transition: .2s;
+
+    &:hover{
+        color: v.$first-color;
+    }
+
+    i {
+      font-size: 1.55rem;
+    }
+  }
+
+  h2 {
+    color: v.$title-color;
+  }
+
+  &__data {
+    gap: 2.5rem;
+  }
+
+  &__data-input {
+    background-color: v.$first-color-lighter;
+    padding: 1rem;
+    border-radius: 0.75rem;
+    input {
+      width: 70%;
+      background-color: v.$first-color-lighter;
+      border: none;
+      font-size: 1.5rem;
+    }
+
+    button {
+      background-color: v.$first-color;
+      padding: 1.6rem 2rem;
+      color: v.$body-color;
+      font-weight: 500;
+      font-family: "Poppins", sans-serif;
+      border-radius: 0.9rem;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.45rem;
+      gap: 0.8rem;
+      transition: 0.2s;
+
+      &:hover {
+        background-color: v.$first-color-alt;
+      }
+
+      &:hover i {
+        transform: translateX(0.3rem) rotate(-35deg);
+      }
+
+      i {
+        transform: rotate(-35deg);
+        font-size: 1.75rem;
+        transition: 0.2s;
+      }
+    }
+  }
+}
+
+.address {
+  gap: 2.5rem;
+  h2 {
+    color: v.$title-color;
+  }
+
+  p {
+    color: v.$text-color;
+    font-size: 1.3rem;
+    line-height: 2.5;
+  }
+}
+
+.contact {
+  gap: 2.5rem;
+  h2 {
+    color: v.$title-color;
+  }
+
+  &__data {
+    gap: 1.3rem;
+    p {
+      color: v.$text-color;
+      font-size: 1.3rem;
+    }
+
+    &-socials {
+      gap: 1rem;
+
+      i {
+        font-size: 1.85rem;
+        transition: 0.3s;
+
+        &:hover {
+          transform: translateY(-0.3rem);
+        }
+      }
+    }
+  }
+}
+
+.cards {
+  gap: 1.7rem;
+  h2 {
+    color: v.$title-color;
+  }
+
+  &__banks {
+    gap: 0.6rem;
+    img {
+      width: 4rem;
+    }
+  }
+}
