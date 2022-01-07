@@ -8,6 +8,5 @@ faq.forEach((faq) => {
     if (faq.classList.contains("active")) {
       faq.classList.remove("hover");
     } else faq.classList.add("hover");
-    console.log(faq);
   });
 });
