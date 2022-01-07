@@ -612,6 +612,10 @@ textarea {
   .faq__questions {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .contact-us {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 @media only screen and (min-width: 970px) {
   body {
@@ -688,6 +692,10 @@ textarea {
   }
   .faq h3 {
     font-size: 1.45rem;
+  }
+
+  .contact-us h2 {
+    font-size: 3.5rem;
   }
 }
 @media only screen and (min-width: 1000px) {
