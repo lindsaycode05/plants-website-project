@@ -491,7 +491,10 @@ fieldset {
   gap: 2rem;
   border: none;
 }
-fieldset button {
+fieldset .confirmation {
+  gap: 1.5rem;
+}
+fieldset .confirmation button {
   background-color: #3e6553;
   color: white;
   width: 18.35rem;
@@ -505,16 +508,22 @@ fieldset button {
   align-items: center;
   transition: 0.2s;
 }
-fieldset button:hover {
+fieldset .confirmation button:hover {
   background-color: #365949;
 }
-fieldset button:hover i {
+fieldset .confirmation button:hover i {
   transform: translateX(0.3rem) rotate(-35deg);
 }
-fieldset button i {
+fieldset .confirmation button i {
   transform: rotate(-35deg);
   font-size: 1.4rem;
   transition: 0.2s;
+}
+fieldset .confirmation p {
+  font-size: 1.3rem;
+  color: #365949;
+  font-weight: 500;
+  display: none;
 }
 
 input {
@@ -901,5 +910,10 @@ footer {
 @media only screen and (min-width: 1200px) {
   .about {
     gap: 7rem;
+  }
+}
+@media only screen and (min-width: 1660px) {
+  header ul a {
+    font-size: 1.615rem;
   }
 }

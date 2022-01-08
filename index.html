@@ -358,17 +358,22 @@
                 </div>
             </div>
             <div class="contact-us__form">
-                <form action="">
+                <form action="" onsubmit="submitForm(event)">
                     <fieldset class="flex-column">
-                        <input type="email" name="email" id="email" placeholder="Email" required>
+                        <input type="email" name="email" id="email" placeholder="Email">
 
-                        <input type="text" name="subject" id="subject" placeholder="Subject" required>
+                        <input type="text" name="subject" id="subject" placeholder="Subject">
 
-                        <textarea name="message" id="message" cols="21" rows="5" placeholder="Message"
-                            required></textarea>
+                        <textarea name="message" id="message" cols="21" rows="5" placeholder="Message"></textarea>
 
-                        <button class="flex">Send Message <i class='bx bx-right-arrow-alt'
-                                style='color:#fff'></i></button>
+                        <div class="confirmation flex-column"><button class="flex form-send">Send Message <i
+                                    class='bx bx-right-arrow-alt' style='color:#fff'></i></button>
+
+                            <p class="form-notification">Message Sent! <br> We'll respond soon! 🌿</p>
+                        </div>
+
+
+
                     </fieldset>
                 </form>
             </div>

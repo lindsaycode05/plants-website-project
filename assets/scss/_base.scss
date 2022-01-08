@@ -69,8 +69,8 @@ header {
   }
 }
 
-.nav-active{
-    right: 0;
+.nav-active {
+  right: 0;
 }
 
 main {
@@ -496,32 +496,42 @@ fieldset {
   gap: 2rem;
   border: none;
 
-  button {
-    background-color: v.$first-color;
-    color: v.$body-color;
-    width: 18.35rem;
-    font-weight: 500;
-    font-family: "Poppins", sans-serif;
-    font-size: 1.45rem;
-    padding: 1.45rem 1.8rem;
-    gap: 0.6rem;
-    border-radius: 0.5rem;
-    justify-content: center;
-    align-items: center;
-    transition: 0.2s;
-
-    &:hover {
-      background-color: v.$first-color-alt;
-    }
-
-    &:hover i {
-      transform: translateX(0.3rem) rotate(-35deg);
-    }
-
-    i {
-      transform: rotate(-35deg);
-      font-size: 1.4rem;
+  .confirmation {
+    gap: 1.5rem;
+    button {
+      background-color: v.$first-color;
+      color: v.$body-color;
+      width: 18.35rem;
+      font-weight: 500;
+      font-family: "Poppins", sans-serif;
+      font-size: 1.45rem;
+      padding: 1.45rem 1.8rem;
+      gap: 0.6rem;
+      border-radius: 0.5rem;
+      justify-content: center;
+      align-items: center;
       transition: 0.2s;
+
+      &:hover {
+        background-color: v.$first-color-alt;
+      }
+
+      &:hover i {
+        transform: translateX(0.3rem) rotate(-35deg);
+      }
+
+      i {
+        transform: rotate(-35deg);
+        font-size: 1.4rem;
+        transition: 0.2s;
+      }
+    }
+
+    p {
+      font-size: 1.3rem;
+      color: v.$first-color-alt;
+      font-weight: 500;
+      display: none;
     }
   }
 }
