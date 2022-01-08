@@ -53,10 +53,6 @@ button {
   display: grid;
 }
 
-.hidden--primary {
-  display: none;
-}
-
 .width {
   width: 90%;
   margin-inline: auto;
@@ -74,6 +70,11 @@ header {
   padding: 1.4rem 1.65rem;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
+  width: 100%;
+  max-width: 110rem;
+  z-index: 3;
+  background-color: white;
 }
 header .logo a {
   align-items: center;
@@ -118,8 +119,13 @@ header ul box-icon {
   height: 1.95rem;
 }
 
+.nav-active {
+  right: 0;
+}
+
 main {
   gap: 11.5rem;
+  margin-top: 14rem;
 }
 
 .hero {
@@ -141,22 +147,22 @@ main {
   gap: 1.8rem;
 }
 .hero__content h1 {
-  font-size: 3rem;
+  font-size: 2.6rem;
   color: #252826;
 }
 .hero__content p {
-  font-size: 1.5rem;
+  font-size: 1.45rem;
   color: #565d59;
 }
 .hero__content a {
   color: white;
   background-color: #3e6553;
-  font-size: 1.5rem;
+  font-size: 1.45rem;
   font-weight: 500;
   gap: 0.5rem;
   align-items: end;
   width: 14rem;
-  padding: 1.55rem 2.7rem;
+  padding: 1.45rem 2.6rem;
   justify-content: center;
   border-radius: 0.75rem;
   transition: 0.1s;
@@ -686,6 +692,35 @@ footer {
     width: 18rem;
   }
 }
+@media only screen and (max-width: 767px) {
+  nav {
+    position: absolute;
+    top: 0;
+    right: -65rem;
+    background-color: white;
+    width: 80%;
+    height: 100vh;
+    padding: 7.5rem 0 0 4rem;
+    box-shadow: 2px 2px 3px 1px rgba(136, 136, 136, 0.742);
+    transition: 0.4s ease-in-out;
+  }
+  nav .close {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+  }
+  nav .close i {
+    font-size: 2.5rem;
+  }
+  nav ul {
+    flex-direction: column;
+    gap: 2.3rem;
+    align-items: start !important;
+  }
+  nav box-icon {
+    display: none;
+  }
+}
 @media only screen and (min-width: 767px) {
   body {
     gap: 9rem;
@@ -694,10 +729,10 @@ footer {
   header {
     padding: 2.8rem 2.55rem;
   }
-  header .hidden--primary {
-    display: block;
+  header .hidden {
+    display: none;
   }
-  header .hidden--secondary {
+  header .close {
     display: none;
   }
 
@@ -748,14 +783,14 @@ footer {
   .subscribe__data-input input {
     width: 80%;
   }
+
+  main {
+    margin-top: 22rem;
+  }
 }
 @media only screen and (min-width: 970px) {
   body {
     gap: 12rem;
-  }
-
-  header ul a {
-    font-size: 1.615rem;
   }
 
   .hero__image img {

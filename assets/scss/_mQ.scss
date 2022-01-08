@@ -1,3 +1,5 @@
+@use "variables" as v;
+
 @media only screen and (min-width: 392px) {
   .about__content-secondary-checks span {
     &:nth-of-type(2) i,
@@ -46,6 +48,40 @@
   }
 }
 
+@media only screen and (max-width: 767px) {
+  nav {
+    position: absolute;
+    top: 0;
+    right: -65rem;
+    background-color: v.$body-color;
+    width: 80%;
+    height: 100vh;
+    padding: 7.5rem 0 0 4rem;
+    box-shadow: 2px 2px 3px 1px rgba(136, 136, 136, 0.742);
+    transition: 0.4s ease-in-out;
+
+    .close {
+      position: absolute;
+      top: 2rem;
+      right: 2rem;
+
+      i {
+        font-size: 2.5rem;
+      }
+    }
+
+    ul {
+      flex-direction: column;
+      gap: 2.3rem;
+      align-items: start !important;
+    }
+
+    box-icon {
+      display: none;
+    }
+  }
+}
+
 @media only screen and (min-width: 767px) {
   body {
     gap: 9rem;
@@ -54,11 +90,11 @@
   header {
     padding: 2.8rem 2.55rem;
 
-    .hidden--primary {
-      display: block;
+    .hidden {
+      display: none;
     }
 
-    .hidden--secondary {
+    .close {
       display: none;
     }
   }
@@ -115,15 +151,15 @@
       width: 80%;
     }
   }
+
+  main {
+    margin-top: 22rem;
+  }
 }
 
 @media only screen and (min-width: 970px) {
   body {
     gap: 12rem;
-  }
-
-  header ul a {
-    font-size: 1.615rem;
   }
 
   .hero {
