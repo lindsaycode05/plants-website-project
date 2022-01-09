@@ -2,6 +2,8 @@
 
 body {
   gap: 6rem;
+  transition-duration: 300ms;
+  transition-timing-function: ease-in-out;
 }
 
 header {
@@ -13,6 +15,8 @@ header {
   max-width: 110rem;
   z-index: 3;
   background-color: v.$body-color;
+  transition-duration: 300ms;
+  transition-timing-function: ease-in-out;
 
   .logo a {
     align-items: center;
@@ -21,7 +25,7 @@ header {
     text-transform: uppercase;
     font-weight: 600;
     font-size: 1.35rem;
-    transition: 0.35s;
+    transition: 0.3s;
 
     &:hover {
       color: v.$first-color;
@@ -35,13 +39,6 @@ header {
 
   .icons {
     gap: 1.5rem;
-
-    box-icon {
-      &[name="moon"] {
-        width: 1.85rem;
-        height: 1.85rem;
-      }
-    }
   }
 
   ul {
@@ -51,7 +48,7 @@ header {
       color: v.$title-color;
       font-size: 1.5rem;
       font-weight: 500;
-      transition: 0.2s;
+      transition: 0.3s;
 
       &:hover {
         color: v.$first-color;
@@ -61,11 +58,22 @@ header {
     button {
       margin-top: 0.3rem;
     }
+  }
 
-    box-icon {
-      width: 1.95rem;
-      height: 1.95rem;
-    }
+  .bx-menu {
+    font-size: 2.2rem;
+  }
+
+  .bx-sun {
+    font-size: 1.9rem;
+  }
+
+  .bx-moon {
+    font-size: 1.775rem;
+  }
+
+  .bx-sun {
+    color: v.$body-color;
   }
 }
 
@@ -260,6 +268,8 @@ main {
   padding: 2.9rem 1.6rem;
   border-radius: 1.8rem;
   gap: 5.35rem;
+  transition-duration: 300ms;
+  transition-timing-function: ease-in-out;
 
   h2 {
     color: v.$body-color;
@@ -275,6 +285,8 @@ main {
       padding: 2.4rem;
       border-radius: 1.8rem;
       gap: 2rem;
+      transition-duration: 300ms;
+      transition-timing-function: ease-in-out;
 
       &:hover span {
         transform: translateY(-0.5rem);
@@ -443,7 +455,7 @@ main {
 }
 
 .faq__questions-question.active {
-  background-color: v.$first-color;
+  background-color: v.$first-color !important;
   color: v.$body-color;
 }
 
@@ -665,6 +677,7 @@ footer {
       i {
         font-size: 1.85rem;
         transition: 0.3s;
+        color: v.$text-color;
 
         &:hover {
           transform: translateY(-0.3rem);

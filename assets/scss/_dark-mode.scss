@@ -1,0 +1,97 @@
+@use "variables" as v;
+
+body.dark {
+  background-color: v.$body-color-dark;
+}
+
+body.dark header {
+  background-color: v.$body-color-dark;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);
+}
+
+body.dark header .logo a {
+  color: v.$body-color;
+}
+
+body.dark .nav-active {
+  background-color: v.$container-color-dark;
+}
+
+body.dark .nav-active .bx-moon,
+body.dark .nav-active .bx-sun {
+  display: none;
+}
+
+body.dark .bx-x {
+  color: v.$body-color;
+}
+
+body.dark .bx-menu {
+  color: v.$body-color;
+}
+
+body.dark nav ul a {
+  color: v.$body-color;
+}
+
+body.dark h1,
+body.dark h2,
+body.dark h3 {
+  color: v.$title-color-dark;
+}
+
+body.dark p,
+body.dark span {
+  color: v.$text-color-dark;
+}
+
+body.dark p.socials {
+  color: v.$first-color;
+}
+
+body.dark p.data {
+  color: v.$title-color-dark;
+}
+
+body.dark .subscribe a {
+  color: v.$title-color-dark;
+}
+
+body.dark .contact__data-socials i {
+  color: v.$text-color-dark;
+}
+
+body.dark .the-steps {
+  background-color: v.$first-color-dark;
+}
+
+body.dark .the-steps__cards-card {
+  background-color: v.$container-color-dark;
+}
+
+body.dark .img-bg {
+  background-color: v.$container-color-dark;
+}
+
+body.dark .faq {
+  background-color: v.$first-color-dark;
+}
+
+body.dark .faq__questions-question {
+  background-color: v.$container-color-dark;
+}
+
+body.dark .bx-plus {
+  color: v.$body-color;
+}
+
+body.dark input,
+body.dark textarea {
+  background-color: v.$body-color-dark;
+  color: v.$text-color-dark;
+}
+
+body.dark .subscribe__data-input,
+body.dark .subscribe__data-input input {
+  background-color: v.$container-color-dark;
+}

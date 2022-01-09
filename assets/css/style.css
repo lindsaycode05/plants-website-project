@@ -58,12 +58,10 @@ button {
   margin-inline: auto;
 }
 
-.hover :hover {
-  box-shadow: 2px 2px 6px -2px rgba(197, 197, 197, 0.728);
-}
-
 body {
   gap: 6rem;
+  transition-duration: 300ms;
+  transition-timing-function: ease-in-out;
 }
 
 header {
@@ -75,6 +73,8 @@ header {
   max-width: 110rem;
   z-index: 3;
   background-color: white;
+  transition-duration: 300ms;
+  transition-timing-function: ease-in-out;
 }
 header .logo a {
   align-items: center;
@@ -83,7 +83,7 @@ header .logo a {
   text-transform: uppercase;
   font-weight: 600;
   font-size: 1.35rem;
-  transition: 0.35s;
+  transition: 0.3s;
 }
 header .logo a:hover {
   color: #3e6553;
@@ -95,10 +95,6 @@ header .logo a box-icon {
 header .icons {
   gap: 1.5rem;
 }
-header .icons box-icon[name=moon] {
-  width: 1.85rem;
-  height: 1.85rem;
-}
 header ul {
   gap: 4.65rem;
 }
@@ -106,7 +102,7 @@ header ul a {
   color: #252826;
   font-size: 1.5rem;
   font-weight: 500;
-  transition: 0.2s;
+  transition: 0.3s;
 }
 header ul a:hover {
   color: #3e6553;
@@ -114,9 +110,17 @@ header ul a:hover {
 header ul button {
   margin-top: 0.3rem;
 }
-header ul box-icon {
-  width: 1.95rem;
-  height: 1.95rem;
+header .bx-menu {
+  font-size: 2.2rem;
+}
+header .bx-sun {
+  font-size: 1.9rem;
+}
+header .bx-moon {
+  font-size: 1.775rem;
+}
+header .bx-sun {
+  color: white;
 }
 
 .nav-active {
@@ -287,6 +291,8 @@ main {
   padding: 2.9rem 1.6rem;
   border-radius: 1.8rem;
   gap: 5.35rem;
+  transition-duration: 300ms;
+  transition-timing-function: ease-in-out;
 }
 .the-steps h2 {
   color: white;
@@ -301,6 +307,8 @@ main {
   padding: 2.4rem;
   border-radius: 1.8rem;
   gap: 2rem;
+  transition-duration: 300ms;
+  transition-timing-function: ease-in-out;
 }
 .the-steps__cards-card:hover span {
   transform: translateY(-0.5rem);
@@ -447,7 +455,7 @@ main {
 }
 
 .faq__questions-question.active {
-  background-color: #3e6553;
+  background-color: #3e6553 !important;
   color: white;
 }
 
@@ -645,6 +653,7 @@ footer {
 .contact__data-socials i {
   font-size: 1.85rem;
   transition: 0.3s;
+  color: #565d59;
 }
 .contact__data-socials i:hover {
   transform: translateY(-0.3rem);
@@ -663,6 +672,135 @@ footer {
   width: 4rem;
 }
 
+body.dark {
+  background-color: #1c211f;
+}
+
+body.dark header {
+  background-color: #1c211f;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);
+}
+
+body.dark header .logo a {
+  color: white;
+}
+
+body.dark .nav-active {
+  background-color: #262c29;
+}
+
+body.dark .nav-active .bx-moon,
+body.dark .nav-active .bx-sun {
+  display: none;
+}
+
+body.dark .bx-x {
+  color: white;
+}
+
+body.dark .bx-menu {
+  color: white;
+}
+
+body.dark nav ul a {
+  color: white;
+}
+
+body.dark h1,
+body.dark h2,
+body.dark h3 {
+  color: #f2f3f2;
+}
+
+body.dark p,
+body.dark span {
+  color: #bdc2bf;
+}
+
+body.dark p.socials {
+  color: #3e6553;
+}
+
+body.dark p.data {
+  color: #f2f3f2;
+}
+
+body.dark .subscribe a {
+  color: #f2f3f2;
+}
+
+body.dark .contact__data-socials i {
+  color: #bdc2bf;
+}
+
+body.dark .the-steps {
+  background-color: #2f3733;
+}
+
+body.dark .the-steps__cards-card {
+  background-color: #262c29;
+}
+
+body.dark .img-bg {
+  background-color: #262c29;
+}
+
+body.dark .faq {
+  background-color: #2f3733;
+}
+
+body.dark .faq__questions-question {
+  background-color: #262c29;
+}
+
+body.dark .bx-plus {
+  color: white;
+}
+
+body.dark input,
+body.dark textarea {
+  background-color: #1c211f;
+  color: #bdc2bf;
+}
+
+body.dark .subscribe__data-input,
+body.dark .subscribe__data-input input {
+  background-color: #262c29;
+}
+
+@media only screen and (max-width: 767px) {
+  nav {
+    position: absolute;
+    top: 0;
+    right: -35rem;
+    background-color: white;
+    border-radius: 2rem 0 0 0;
+    width: 80%;
+    height: 100vh;
+    padding: 7.5rem 0 0 4rem;
+    box-shadow: 2px 2px 3px 1px rgba(136, 136, 136, 0.824);
+    transition: 0.4s ease-in-out;
+  }
+  nav .close {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+  }
+  nav .close i {
+    font-size: 2.5rem;
+  }
+  nav ul {
+    flex-direction: column;
+    gap: 2.3rem;
+    align-items: start !important;
+  }
+  nav box-icon {
+    display: none;
+  }
+  nav .bx-moon {
+    display: none;
+  }
+}
 @media only screen and (min-width: 392px) {
   .about__content-secondary-checks span:nth-of-type(2) i, .about__content-secondary-checks span:nth-of-type(3) i {
     margin-bottom: 0;
@@ -673,6 +811,16 @@ footer {
   }
   .products__list-product img {
     width: 11rem;
+  }
+}
+@media only screen and (min-width: 440px) {
+  nav {
+    right: -45rem;
+  }
+}
+@media only screen and (min-width: 560px) {
+  nav {
+    right: -62rem;
   }
 }
 @media only screen and (min-width: 584px) {
@@ -699,35 +847,6 @@ footer {
   }
   .subscribe__data-input input {
     width: 18rem;
-  }
-}
-@media only screen and (max-width: 767px) {
-  nav {
-    position: absolute;
-    top: 0;
-    right: -65rem;
-    background-color: white;
-    width: 80%;
-    height: 100vh;
-    padding: 7.5rem 0 0 4rem;
-    box-shadow: 2px 2px 3px 1px rgba(136, 136, 136, 0.742);
-    transition: 0.4s ease-in-out;
-  }
-  nav .close {
-    position: absolute;
-    top: 2rem;
-    right: 2rem;
-  }
-  nav .close i {
-    font-size: 2.5rem;
-  }
-  nav ul {
-    flex-direction: column;
-    gap: 2.3rem;
-    align-items: start !important;
-  }
-  nav box-icon {
-    display: none;
   }
 }
 @media only screen and (min-width: 767px) {
@@ -795,6 +914,10 @@ footer {
 
   main {
     margin-top: 22rem;
+  }
+
+  body.dark header {
+    box-shadow: none;
   }
 }
 @media only screen and (min-width: 970px) {

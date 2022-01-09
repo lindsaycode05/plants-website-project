@@ -8,14 +8,13 @@ const closeButton = document.querySelector(".close");
 const formButton = document.querySelector(".form-send");
 const formMessage = document.querySelector(".form-notification");
 
+const body = document.querySelector("body");
+const lightModeToggleButton = document.querySelectorAll(".bx-moon");
+
 // accordion
 faq.forEach((faq) => {
   faq.addEventListener("click", () => {
     faq.classList.toggle("active");
-
-    if (faq.classList.contains("active")) {
-      faq.classList.remove("hover");
-    } else faq.classList.add("hover");
   });
 });
 
@@ -39,8 +38,21 @@ formButton.addEventListener("click", () => {
 
 function messageDisappear() {
   formMessage.style.display = "none";
-  window.setTimeout(messageDisappear, 5000);
+  window.setTimeout(messageDisappear, 8000);
 }
 
 messageDisappear();
 
+// light mode toggle
+
+lightModeToggleButton.forEach((lightModeToggleButton) => {
+  lightModeToggleButton.addEventListener("click", () => {
+    body.classList.toggle("dark");
+
+    if (body.classList.contains("dark")) {
+      lightModeToggleButton.className = "bx bx-sun";
+    } else {
+      lightModeToggleButton.className = "bx bx-moon";
+    }
+  });
+});
