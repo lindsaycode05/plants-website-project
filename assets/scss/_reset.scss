@@ -38,3 +38,15 @@ button {
   border: none;
   cursor: pointer;
 }
+
+section {
+  position: relative;
+}
+
+section span#about,
+section span#products,
+section span#faq,
+section span#contact {
+  position: absolute;
+  top: -12rem;
+}

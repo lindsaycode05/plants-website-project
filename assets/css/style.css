@@ -39,6 +39,18 @@ button {
   cursor: pointer;
 }
 
+section {
+  position: relative;
+}
+
+section span#about,
+section span#products,
+section span#faq,
+section span#contact {
+  position: absolute;
+  top: -12rem;
+}
+
 .flex-column {
   display: flex;
   flex-direction: column;
@@ -704,6 +716,9 @@ body.dark .bx-menu {
 
 body.dark nav ul a {
   color: white;
+}
+body.dark nav ul a:hover {
+  color: #3e6553;
 }
 
 body.dark h1,

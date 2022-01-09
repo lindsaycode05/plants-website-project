@@ -32,6 +32,10 @@ body.dark .bx-menu {
 
 body.dark nav ul a {
   color: v.$body-color;
+
+  &:hover {
+    color: v.$first-color;
+  }
 }
 
 body.dark h1,
