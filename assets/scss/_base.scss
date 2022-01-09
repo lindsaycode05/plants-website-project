@@ -700,3 +700,18 @@ footer {
     }
   }
 }
+
+.up-arrow {
+  position: fixed;
+  bottom: -6rem;
+  right: 3rem;
+  transition: 0.2s;
+  i {
+    font-size: 4.5rem;
+    opacity: 0.75;
+  }
+}
+
+.up-arrow.active {
+  bottom: 3rem;
+}
